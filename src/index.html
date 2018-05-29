@@ -7,20 +7,19 @@
     <title>Caesar Cipher</title>
   </head>
   <body>
-    <div id="root">
-      <h1 id="titulo">CIFRADO CESAR</h1> 
+    <section>
+     <header id="titulo">CIFRADO CESAR</header> <br><br>
       <form >
-            <input type="text" id="Desplazamiento" name="Desplazamiento" placeholder="Desplazamiento">
-            <p id="numero1"></p>
-
+            <input type="number" id="Desplazamiento" name="Desplazamiento" placeholder="Desplazamiento">
+            <br><br>
             <label for="texto">Texto:</label><br>
             <input type="text" id="texto" name="cifrado">
             <br> <br>
             <button id="Cifrar" type="button">Cifrar</button>
             <button id="Descifrar" type="button">Descifrar</button> <br><br>
-            <textarea name="resultado" id="resultado" cols="60" rows="15.5"></textarea>
+            <p name="resultado" id="resultado"></p>
       </form>
-    </div>
+    </section>
     <script src="cipher.js"></script>
     <script src="index.js"></script>
   </body>
