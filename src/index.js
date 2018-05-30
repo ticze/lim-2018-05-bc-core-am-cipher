@@ -1,13 +1,15 @@
-var numeros = document.getElementById("Desplazamiento");
-var textocifrar = document.getElementById("texto");
+let numeros = document.getElementById("Desplazamiento");//obteniendo el desplaamiento 
+let textocifrar = document.getElementById("texto");//obteniendo el texto
 
-var codificar = document.getElementById("Cifrar");
+let codificar = document.getElementById("Cifrar");
+//dando evento al boton para codificar
 codificar.addEventListener("click",function(event){
   event.preventDefault();
   document.getElementById("resultado").innerHTML= cipher.encode(numeros.value,textocifrar.value);
 });
  
-var decodificar = document.getElementById("Descifrar");
+let decodificar = document.getElementById("Descifrar");
+//dando evento al boton para decodificar 
 decodificar.addEventListener("click",function(event){
   event.preventDefault();
   document.getElementById("resultado").innerHTML = cipher.decode(numeros.value,textocifrar.value);

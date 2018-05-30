@@ -7,11 +7,17 @@ body {
 
 header{
     background-color: aliceblue;
-    font-size: 7em;
     font-family: cursive;
     color: black;
     text-align: center;
-    width: 2 0%;
+    width: 65%;
+    left: 19%;  
+    display: inline-block;
+}
+
+h1{
+    font-size: 350%;
+    margin: 0.5%;
 }
 #Desplazamiento{
     color:black;
@@ -43,4 +49,7 @@ p{
     left: 19%;    
     display: inline-block;
     color: black;
+}
+section{
+    margin: 2%;
 }
