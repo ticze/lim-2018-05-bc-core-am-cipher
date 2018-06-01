@@ -1,16 +1,16 @@
-let numeros = document.getElementById("Desplazamiento");//obteniendo el desplaamiento 
-let textocifrar = document.getElementById("texto");//obteniendo el texto
+let numbers = document.getElementById('Desplazamiento');// obteniendo el desplaamiento 
+let  encryptText = document.getElementById('texto');// obteniendo el texto
 
-let codificar = document.getElementById("Cifrar");
-//dando evento al boton para codificar
-codificar.addEventListener("click",function(event){
+let btnEncode = document.getElementById('Cifrar');
+// dando evento al boton para codificar
+btnEncode.addEventListener('click', function(event){
   event.preventDefault();
-  document.getElementById("resultado").innerHTML= cipher.encode(numeros.value,textocifrar.value);
+  document.getElementById('resultado').innerHTML = cipher.encode(numbers.value, encryptText.value);
 });
  
-let decodificar = document.getElementById("Descifrar");
-//dando evento al boton para decodificar 
-decodificar.addEventListener("click",function(event){
+let btnDecode = document.getElementById('Descifrar');
+// dando evento al boton para decodificar 
+btnDecode.addEventListener('click', function(event){
   event.preventDefault();
-  document.getElementById("resultado").innerHTML = cipher.decode(numeros.value,textocifrar.value);
+  document.getElementById('resultado').innerHTML = cipher.decode(numbers.value, encryptText.value);
 });

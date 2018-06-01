@@ -1,39 +1,49 @@
 window.cipher = {
-  encode : (offset , string) => { 
-    let valorDesplazamiento = parseInt(offset)
-    let textoResultado ='';
-    for(let i=0; i < string.length ; i++){
+  encode : (offset, string) => { 
+    let displacementValue = parseInt(offset);
+    let textResult = '';
+    for (let i = 0; i < string.length ; i++) {
       const asciiNum = string.toUpperCase().charCodeAt(i);
-      if( asciiNum === 32){
-        textoResultado += ' ';
+      if (asciiNum === 32) {
+        textResult += ' ';
+      } 
+      else if (asciiNum >= 48 && asciiNum <= 57 ) {
+        const formulaNumber = (asciiNum - 48 + displacementValue) %10 +48;// formula para cifrar numeros (%10 = cantidad de numeros desde 0 a 9)
+        textResult += String.fromCharCode(formulaNumber);
       } else {
-        const formula = (asciiNum - 65 + valorDesplazamiento)%26+65 ;
-        textoResultado += String.fromCharCode(formula);
+        const formulaLetters = (asciiNum - 65 + displacementValue) %26 +65;
+        textResult += String.fromCharCode(formulaLetters);
       }
     }
-    return textoResultado;  
+    return textResult;  
   },
-  decode : (offset,string) => {
-    let valorDesplazamiento = parseInt(offset)
-    let textoResultado ='';
-    for(let i=0; i < string.length ; i++){
+  
+  decode : (offset, string) => {
+    let displacementValue = parseInt(offset);
+    let textResult = '';
+    for (let i=0; i < string.length ; i++) {
       const asciiNum = string.toUpperCase().charCodeAt(i);
-      if( asciiNum === 32){
-        textoResultado += ' ';
+      if (asciiNum === 32) {
+        textResult += ' ';
+      } 
+      else if (asciiNum>=48 && asciiNum <= 57 ) {
+        const formulaNumber = (asciiNum - 48 - displacementValue) %10 +48;// formula  para decifrar numeros
+        textResult += String.fromCharCode(formulaNumber);
       } else {
-        const formula = (asciiNum + 65 - valorDesplazamiento)%26+65 ;
-        textoResultado += String.fromCharCode(formula);
+        const formulaLetters = (asciiNum + 65 - displacementValue) %26 +65;
+        textResult += String.fromCharCode(formulaLetters);
       }
     }
-    return textoResultado;
-  },
-  createCipherWithOffset : (offset) => {
-    return{
+    return textResult;
+  } ,
+
+  createCipherWithOffset: (offset) => {
+    return {
       encode: (string) => {
-        return cipher.encode(offset,string)
+        return cipher.encode(offset, string)
       },
       decode: (string) => {
-        return cipher.decode( offset,string)
+        return cipher.decode(offset, string)
       }
     }
   }

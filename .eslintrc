@@ -1,9 +1,15 @@
 {
   "env": {
-    "browser": true
+    "browser": true,
+    "node": true ,
+    "mocha": true
   },
   "parserOptions": {
     "ecmaVersion": 6
   },
-  "extends": "eslint:recommended"
+  "extends": "eslint:recommended",
+  "global": {
+   "assert": false,
+   "cipher": false 
+  }
 }

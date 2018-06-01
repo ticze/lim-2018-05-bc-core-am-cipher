@@ -1,55 +1,48 @@
 body {
-    background: url(https://fondoscelular.com/wp-content/uploads/2018/03/fondos-de-pantalla-tumblr-166x300.jpg);
-    text-align: center;
-    padding: 1.5%;
-    margin: 1.5%;
-}
-
-header{
-    background-color: aliceblue;
-    font-family: cursive;
-    color: black;
-    text-align: center;
-    width: 65%;
-    left: 19%;  
-    display: inline-block;
+  background: url(https://fondoscelular.com/wp-content/uploads/2018/03/fondos-de-pantalla-tumblr-166x300.jpg);
+  text-align: center;
+  padding: 1.5%;
+  margin: 1.5%;
 }
 
 h1{
-    font-size: 350%;
-    margin: 0.5%;
+  font-size: 300%;
+  margin: 0.5%;
+  text-align: center;
+  color: aliceblue;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 #Desplazamiento{
-    color:black;
-    size:100%;
+  color:black;
+  size:100%;
 }
 label{
-    color: white;
-    font-size: 33px;
+  color: white;
+  font-size: 33px;
 }
 input{
-    width: 60%;
-    border: 3px ridge ;
+  width: 50%;
+  border: 3px ridge ;
 }
 button {
-    background-color: #142852;
-    color: #98b1e6;
-    border: #142852;
-    border-radius: 10%;
-    font-size: 23px;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  background-color: #142852;
+  color: #98b1e6;
+  border: #142852;
+  border-radius: 10%;
+  font-size: 23px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 p{
-    background: white;
-    padding: 1.5%;
-    margin: 1.5%;
-    width: 55%;
-    min-height: 150px;
-    border:medium inset #142852;
-    left: 19%;    
-    display: inline-block;
-    color: black;
+  background: white;
+  padding: 1.5%;
+  margin: 1.5%;
+  width: 55%;
+  min-height: 150px;
+  border:medium inset #142852;
+  left: 19%;    
+  display: inline-block;
+  color: black;
 }
 section{
-    margin: 2%;
+  margin: 2%;
 }
