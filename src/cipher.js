@@ -2,12 +2,11 @@ window.cipher = {
   encode : (offset, string) => { 
     let displacementValue = parseInt(offset);
     let textResult = '';
-    for (let i = 0; i < string.length ; i++) {
+    for(let i = 0; i < string.length ; i++) {
       const asciiNum = string.toUpperCase().charCodeAt(i);
-      if (asciiNum === 32) {
+      if(asciiNum === 32) {
         textResult += ' ';
-      } 
-      else if (asciiNum >= 48 && asciiNum <= 57 ) {
+      } else if(asciiNum >= 48 && asciiNum <= 57 ) {
         const formulaNumber = (asciiNum - 48 + displacementValue) %10 +48;// formula para cifrar numeros (%10 = cantidad de numeros desde 0 a 9)
         textResult += String.fromCharCode(formulaNumber);
       } else {
@@ -21,12 +20,11 @@ window.cipher = {
   decode : (offset, string) => {
     let displacementValue = parseInt(offset);
     let textResult = '';
-    for (let i=0; i < string.length ; i++) {
+    for(let i=0; i < string.length ; i++) {
       const asciiNum = string.toUpperCase().charCodeAt(i);
-      if (asciiNum === 32) {
+      if(asciiNum === 32) {
         textResult += ' ';
-      } 
-      else if (asciiNum>=48 && asciiNum <= 57 ) {
+      } else if(asciiNum>=48 && asciiNum <= 57 ) {
         const formulaNumber = (asciiNum - 48 - displacementValue) %10 +48;// formula  para decifrar numeros
         textResult += String.fromCharCode(formulaNumber);
       } else {

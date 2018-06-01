@@ -25,10 +25,10 @@ input{
   border: 3px ridge ;
 }
 button {
-  background-color: #142852;
-  color: #98b1e6;
-  border: #142852;
-  border-radius: 10%;
+  background-color: #e6eeff;
+  color: #001a4d;
+  border: #142852 solid;
+  border-radius: 50px;
   font-size: 23px;
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
@@ -45,4 +45,7 @@ p{
 }
 section{
   margin: 2%;
+}
+#limpiar{
+  float: initial;
 }

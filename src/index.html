@@ -1,26 +1,29 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta charset='utf-8'>
-    <link rel='stylesheet' href='style.css' /> 
-    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="style.css" /> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Caesar Cipher</title>
   </head>
   <body>
     <section>
      <h1>CIFRADO CESAR</h1> <br><br>
       <form >
-            <input type='number' id='Desplazamiento' name='Desplazamiento' placeholder='Desplazamiento'>
-            <br><br>
-            <label for='texto'>Texto:</label><br>
-            <input type='text' id='texto' name='cifrado'>
-            <br> <br>
-            <button id='Cifrar' type='button'>Cifrar</button>
-            <button id='Descifrar' type='button'>Descifrar</button> <br><br>
-            <p name='resultado' id='resultado'></p>
+        <input type="tel" id="Desplazamiento" name="Desplazamiento" placeholder="Desplazamiento" min="1" max="99" maxlength="2" >
+          <br><br>
+        <label for="texto">Texto:</label><br>
+        <input type="text" id="texto" name="cifrado">
+          <br> <br>
+        <button id="Cifrar" type="button">Cifrar</button>
+        <button id="Descifrar" type="button">Descifrar</button> 
+          <br>
+        <p name="resultado" id="resultado"></p> 
+          <br>
+        <button type="reset" id="limpiar">OTRA VEZ!</button>
       </form>
     </section>
-    <script src='cipher.js'></script>
-    <script src='index.js'></script>
+    <script src="cipher.js"></script>
+    <script src="index.js"></script>
   </body>
 </html>

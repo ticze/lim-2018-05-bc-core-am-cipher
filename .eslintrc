@@ -8,8 +8,8 @@
     "ecmaVersion": 6
   },
   "extends": "eslint:recommended",
-  "global": {
+  "globals": {
    "assert": false,
-   "cipher": false 
+   "cipher": false  
   }
 }
