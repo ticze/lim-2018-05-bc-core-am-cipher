@@ -15,4 +15,5 @@ Mi primera ejecucion fue crear mi archivo html, donde estaria los elementos(inpu
 Acontinuacion nos vamos a dar la funcionalidad con javascript, lo que principal necesitamos es lograr capturar el valor del imput donde se pondra el numero de desplzamiento, como lo llamamos ?? pues tenemos que ejecutar el método getElementById () el cual devuelve el elemento que tiene el atributo ID con el valor especificado el html.
 lo mismo con el input para el texto en decifrar. 
 
-(../img/Screenshot_2018-06-03-16-24-27)
+![en moviles](../img/Screenshot_2018-06-03-16-24-27.png)
+
