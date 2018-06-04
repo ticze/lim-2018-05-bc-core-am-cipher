@@ -25,7 +25,7 @@ window.cipher = {
       if(asciiNum === 32) {
         textResult += ' ';
       } else if(asciiNum>=48 && asciiNum <= 57 ) {
-        const formulaNumber = (asciiNum - 48 - displacementValue) %10 +48;// formula  para decifrar numeros
+        const formulaNumber = (asciiNum + 48 + displacementValue) %10 +48;// formula  para decifrar numeros
         textResult += String.fromCharCode(formulaNumber);
       } else {
         const formulaLetters = (asciiNum + 65 - displacementValue) %26 +65;
